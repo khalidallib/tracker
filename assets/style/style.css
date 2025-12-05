@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import "./reset.css";
+
+.container {
+  margin-inline: auto;
+  width: min(100% - 30px, 1080px);
+}
+
+body {
+  background-color: rgb(48 48 48);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.nav-content {
+  display: flex;
+  gap: 2rem;
+}
+nav p {
+  font-size: 20px;
+  color: rgb(0, 120, 255);
+  font-weight: 500;
+}
+
+.hero {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 50vh;
+  place-items: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+h1 {
+  color:rgb(0, 120, 255)
+}
+#track_button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(0, 120, 255);
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.map {
+  height: 50svh;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}

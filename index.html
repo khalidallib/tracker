@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Khalid Alli-B">
+    <meta name="description" content="My first web page">
+    <meta name="keywords" content="HTML, CSS, Web, Web Development, JavaScript">  
+    <link rel="stylesheet" href="./assets/style/style.css" media="all">
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v3.17.0-beta.1/mapbox-gl.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.17.0-beta.1/mapbox-gl.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.css" type="text/css">
+    <link rel="icon" href="./assets/media/favicon.png?v=2" type="image/x-icon"> 
+    <script src="./assets/script/app.js" defer></script>
+    <title>You are here!</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <p>GoRide</p>
+        <div class="nav-content">
+          <a>Support</a>
+          <a>Contact</a>
+          <a>Account</a>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="hero">
+          <div class="hero-content">
+            <h1>Track your rider!</h1>
+            <p>Easily track your driver in real time with our live map.<br> See their exact location as they head toward you, <br>so you’ll always know when to expect them.</p>
+          </div>
+        </div>
+        <div class="content-div">
+          <div id="map" class="map"></div>
+          <input type="button" value="Track" id="track_button">
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
