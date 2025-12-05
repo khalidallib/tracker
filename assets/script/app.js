@@ -10,9 +10,8 @@ const map = new mapboxgl.Map({
   pitch: 40
 })
 
-const marker = new mapboxgl.Marker({color: '#ff7342'});
+const marker = new mapboxgl.Marker({color: 'rgb(0, 120, 255)'});
 
-//The 'success' callback function
 function getLocation(position) {
 
   let { altitude, latitude, longitude } = position.coords;
@@ -21,7 +20,6 @@ function getLocation(position) {
   marker.setLngLat([longitude, latitude]).addTo(map)
 }
 
-//The 'failure' callback function
 function errorHandler() {
   console.log('Unable to retrieve your location');
 }
@@ -41,10 +39,21 @@ function disabledOptions() {
 
 function displayPosition() {
   if('geolocation' in navigator) {
-    navigator.geolocation.getCurrentPosition(getLocation, errorHandler, options);
+    navigator.geolocation.watchPosition(getLocation, errorHandler, options);
   } else {
     console.log('Geolocation is not supported by the brower.')
   }
 }
+
+document.getElementById("track_button").addEventListener("click", function() {
+  if (marker.getLngLat()) {
+    map.easeTo({
+      center: marker.getLngLat(),
+      zoom: 17,
+      pitch: 40,
+      essential: true
+    })
+  }
+})
 
 displayPosition();

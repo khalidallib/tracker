@@ -34,7 +34,7 @@ nav p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 50vh;
+  height: 30vh;
   place-items: center;
 }
 
@@ -53,6 +53,12 @@ h1 {
   display: flex;
   margin-right: auto;
   margin-left: auto;
+  transition: ease-in-out 250ms;
+}
+
+#track_button:hover {
+  width: 120px;
+  background-color: rgb(4, 95, 199);
 }
 
 .map {
