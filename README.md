@@ -4,6 +4,11 @@ GoRide is a real-time driver tracking web application that displays a driver’s
 
 ---
 
+# Screenshot
+![image alt](https://github.com/khalidallib/tracker/blob/20d5c7d97cce381866411560fdd0f33fdd235819/assets/Screenshot%202026-05-13%20001520.png)
+
+---
+
 # Tech Stack
 
 - HTML5
